@@ -1,0 +1,14 @@
+//메인파일
+
+var express = require('express');
+var app = express();
+app.get('/', function(req, res){
+  res.send('Get out of my sight');
+});
+
+app.get('/login', function(req, res){
+  res.send('<h1>Login Please</h1>');
+});
+app.listen(3000, function(){
+  console.log('Connected 3000 port!');
+});
